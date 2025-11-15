@@ -1,32 +1,67 @@
-# 🔐 Cripto Sentinel
-Proteção rápida, simples e direta para pastas e arquivos através de criptografia.
+# Sentinel de Cripto 🔒
+
+**CriptoSentinel** is a Python-based folder encryption tool with a user-friendly GUI. It supports multiple encryption algorithms and allows users to securely encrypt and decrypt entire directories.
 
 ---
 
-## 🚀 Visão Geral
+## Features
 
-O **Cripto Sentinel** é uma ferramenta criada para criptografar e descriptografar pastas inteiras com segurança e praticidade.
-
-Ele foi feito para quem quer:
-
-- 🔒 Proteger arquivos pessoais ou sensíveis  
-- 📁 Criptografar pastas completas com apenas um comando  
-- 🔓 Descriptografar de forma simples  
-- 🚀 Usar algo leve, rápido e sem frescura  
-
-Perfeito para estudos, trabalhos escolares ou até uso pessoal.
+- Encrypt and decrypt entire folders
+- Supports **Fernet**, **AES-128**, and **AES-256**
+- Generates secure keys from passwords
+- Real-time log of encrypted/decrypted files
+- Dark-themed GUI using **Tkinter**
+- Progress bar to track operations
+- Save operation logs for future reference
 
 ---
 
-## ✨ Recursos principais
+## Installation
 
-- 🔐 **Criptografia forte**
-- 🗂️ **Suporte a pastas inteiras**
-- 🎯 **Interface simples**
-- ⚡ **Rápido e direto**
-- 🛠️ **Código limpo e fácil de entender**
+1. Clone the repository:
 
-📄 Licença
+git clone 
+```
+https://github.com/Lz-acc/Sentinel_de_Cripto.git
+```
+Install dependencies:
+```
+pip install cryptography
+```
+Run the GUI:
+```
+python main.py
+```
+Usage
+Select the folder you want to encrypt or decrypt.
 
-Este projeto está sob a MIT License.
-Consulte o arquivo LICENSE para mais detalhes.
+Enter a password.
+
+Choose the encryption algorithm (Fernet, AES-128, AES-256).
+
+Click "Encrypt Folder" or "Decrypt Folder".
+
+Monitor progress in the log section.
+
+Save the log if needed.
+
+Security
+Passwords are converted to secure keys using SHA-256.
+
+AES uses CBC mode with random IV for each file.
+
+Fernet ensures authenticated encryption for safety.
+
+Credits
+Developed by:
+
+Lorenzo Accasto
+
+Eduardo Augusto
+
+Luan Pereira
+
+Pedro Lucas
+
+License
+MIT License
